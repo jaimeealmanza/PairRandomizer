@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0892A5FF204076B800D041C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892A5FE204076B800D041C6 /* AppDelegate.swift */; };
-		0892A601204076B800D041C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892A600204076B800D041C6 /* ViewController.swift */; };
 		0892A604204076B800D041C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0892A602204076B800D041C6 /* Main.storyboard */; };
 		0892A606204076B800D041C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0892A605204076B800D041C6 /* Assets.xcassets */; };
 		0892A609204076B800D041C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0892A607204076B800D041C6 /* LaunchScreen.storyboard */; };
+		0892A6172040785F00D041C6 /* PairRandomizerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892A6162040785F00D041C6 /* PairRandomizerTableViewController.swift */; };
+		0892A61E204079C800D041C6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892A61D204079C800D041C6 /* CoreDataStack.swift */; };
+		0892A621204079D800D041C6 /* PairRandomizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0892A61F204079D800D041C6 /* PairRandomizer.xcdatamodeld */; };
+		0892A62320407ABB00D041C6 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892A62220407ABB00D041C6 /* PersonController.swift */; };
+		0892A62520407AD500D041C6 /* PairRandomizer+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892A62420407AD500D041C6 /* PairRandomizer+Convenience.swift */; };
+		0892A629204098A800D041C6 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892A628204098A800D041C6 /* PersonDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0892A5FB204076B800D041C6 /* PairRandomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PairRandomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0892A5FE204076B800D041C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0892A600204076B800D041C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0892A603204076B800D041C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0892A605204076B800D041C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0892A608204076B800D041C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0892A60A204076B800D041C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0892A6162040785F00D041C6 /* PairRandomizerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairRandomizerTableViewController.swift; sourceTree = "<group>"; };
+		0892A61D204079C800D041C6 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		0892A620204079D800D041C6 /* PairRandomizer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PairRandomizer.xcdatamodel; sourceTree = "<group>"; };
+		0892A62220407ABB00D041C6 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		0892A62420407AD500D041C6 /* PairRandomizer+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PairRandomizer+Convenience.swift"; sourceTree = "<group>"; };
+		0892A628204098A800D041C6 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,67 @@
 		0892A5FD204076B800D041C6 /* PairRandomizer */ = {
 			isa = PBXGroup;
 			children = (
-				0892A5FE204076B800D041C6 /* AppDelegate.swift */,
-				0892A600204076B800D041C6 /* ViewController.swift */,
-				0892A602204076B800D041C6 /* Main.storyboard */,
-				0892A605204076B800D041C6 /* Assets.xcassets */,
-				0892A607204076B800D041C6 /* LaunchScreen.storyboard */,
-				0892A60A204076B800D041C6 /* Info.plist */,
+				0892A613204076E400D041C6 /* Sources */,
+				0892A619204078C900D041C6 /* Core Data */,
+				0892A618204078BA00D041C6 /* Model Controllers */,
+				0892A612204076DD00D041C6 /* View Controllers */,
+				0892A611204076D600D041C6 /* Storyboards */,
+				0892A610204076CC00D041C6 /* Resources */,
 			);
 			path = PairRandomizer;
+			sourceTree = "<group>";
+		};
+		0892A610204076CC00D041C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0892A605204076B800D041C6 /* Assets.xcassets */,
+				0892A60A204076B800D041C6 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0892A611204076D600D041C6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0892A602204076B800D041C6 /* Main.storyboard */,
+				0892A607204076B800D041C6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0892A612204076DD00D041C6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0892A6162040785F00D041C6 /* PairRandomizerTableViewController.swift */,
+				0892A628204098A800D041C6 /* PersonDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0892A613204076E400D041C6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0892A5FE204076B800D041C6 /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0892A618204078BA00D041C6 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0892A62220407ABB00D041C6 /* PersonController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		0892A619204078C900D041C6 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				0892A61D204079C800D041C6 /* CoreDataStack.swift */,
+				0892A61F204079D800D041C6 /* PairRandomizer.xcdatamodeld */,
+				0892A62420407AD500D041C6 /* PairRandomizer+Convenience.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +199,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0892A601204076B800D041C6 /* ViewController.swift in Sources */,
+				0892A62520407AD500D041C6 /* PairRandomizer+Convenience.swift in Sources */,
+				0892A621204079D800D041C6 /* PairRandomizer.xcdatamodeld in Sources */,
 				0892A5FF204076B800D041C6 /* AppDelegate.swift in Sources */,
+				0892A6172040785F00D041C6 /* PairRandomizerTableViewController.swift in Sources */,
+				0892A62320407ABB00D041C6 /* PersonController.swift in Sources */,
+				0892A629204098A800D041C6 /* PersonDetailViewController.swift in Sources */,
+				0892A61E204079C800D041C6 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TXRBZV7C7B;
-				INFOPLIST_FILE = PairRandomizer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PairRandomizer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ACreations.PairRandomizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TXRBZV7C7B;
-				INFOPLIST_FILE = PairRandomizer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PairRandomizer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ACreations.PairRandomizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -322,6 +390,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0892A61F204079D800D041C6 /* PairRandomizer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0892A620204079D800D041C6 /* PairRandomizer.xcdatamodel */,
+			);
+			currentVersion = 0892A620204079D800D041C6 /* PairRandomizer.xcdatamodel */;
+			path = PairRandomizer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0892A5F3204076B800D041C6 /* Project object */;
 }
